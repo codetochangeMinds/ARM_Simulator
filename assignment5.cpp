@@ -399,7 +399,7 @@ void ID()
 		}
 		Register_ID_EX.address == Register_IF_ID.recent_instruction.source;
 	}
-	else
+	else if(Register_IF_ID.recent_instruction.opcode == 10)
 	{
 		Register_IF_ID.address = Register_IF_ID.recent_instruction.source
 	}
@@ -411,7 +411,7 @@ void ID()
 void EX()
 {
 	Register_EX_MEM.prog_cnt = Register_ID_EX.prog_cnt;
-	if( Register_IF_ID.opcode1 <10 )
+	if( Register_IF_ID.opcode <10 && Register_IF_ID.opcode >= 0)
 	{	
 		Register_EX_MEM.src = Register_ID_EX.src;
 		if(Register_IF_ID.opcode == 1)
@@ -453,7 +453,7 @@ void EX()
 				Register_EX_MEM.zero = 0;
 		}
 	}
-	else
+	else  if (Register_IF_ID.opcode == 10)
 	{
 		Register_EX_MEM.val_address = Register_ID_EX.address;
 	}
