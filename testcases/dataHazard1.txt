@@ -1,0 +1,7 @@
+mov r10 ,#5
+mov r9,#6
+Str r10,[r9,#0]		 
+Ldr r1,[r10,#4]
+Add r2,r1,#2
+Mul r3,r1,#2
+exit
