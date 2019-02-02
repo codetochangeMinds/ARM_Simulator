@@ -1,4 +1,4 @@
-##Command to Run Program
+**Command to Run Program**
 1. Open Terminal and cd Src_Code
 2. g++ -std=c++11 armSim.cpp -o processor_simulator
 3. ./processor_simulator
