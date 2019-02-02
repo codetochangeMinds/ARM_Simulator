@@ -5,19 +5,19 @@
 *input to simulator is given through latency.txt and in.txt*
 
 
-##Assumption
+**Assumption**
 1. Cmp and Branch(bge and bne) are considered to be one instruction.
 2. Pseudo Memory is of size 5000,label is assigned memory according to .data section.
 3. Input is taken from in.txt while latency data is taken from latency.txt 
 
-#Gui
+**Gui**
 1. Diffrent color are used for every pipeline stage.
 2. Instruction in particular stage is shown just below it in white color.
 3. If there is no instruction in particular stage then there will be nothing written below it.
 4. When instruction is flushed then it is shown by printing **flush** in that stage.
 5. Whereas when we need stall to remove hazard **stall** will be written below that stage.
 
-##Instruction Set##
+**Instruction Set**
 1. Add rd,rop1,rop2
 2. Add rd,rop1,#Imm
 3. Add SP,SP,#Imm
