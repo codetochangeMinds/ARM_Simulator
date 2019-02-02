@@ -10,7 +10,7 @@
 2. Pseudo Memory is of size 5000,label is assigned memory according to .data section.
 3. Input is taken from in.txt while latency data is taken from latency.txt 
 
-**Gui**
+**GUI**
 1. Diffrent color are used for every pipeline stage.
 2. Instruction in particular stage is shown just below it in white color.
 3. If there is no instruction in particular stage then there will be nothing written below it.
