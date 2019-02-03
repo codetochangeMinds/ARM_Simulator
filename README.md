@@ -1,3 +1,9 @@
+## Problem Statement
+There is a need to visualize what is going at lower layer of abstraction when we execute the high level or low level program on a Von Neuman machine. The projects aims to build a ARM language simulator to visualize the execution of ARM language(low level) instructions. As in case of advanced processors the concept of pipelining are used, the simulator should be able to visualize the execution of instructions using pipelining concept. The simulator should simulate the recursive function, if statements, for loops statement etc.
+
+## Abstract of the Development Phase
+We developed the project using c++ and the concept of pipelining. Instruction are read from a file along with the latency of the instructions. The simulator was able to visualize the execution of the instruction and displayed on the terminal.
+
 ## Command to Run Program
 1. Open Terminal and cd Src_Code
 2. g++ -std=c++11 armSim.cpp -o processor_simulator
